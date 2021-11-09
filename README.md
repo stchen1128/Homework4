@@ -21,7 +21,7 @@ output:
 ```
 Rscript -e "rmarkdown::render('Info550_project.Rmd')"
 ```
-This will create a file called report.html output in your directory that contains the results.
+This will create a html file called R/Info550_project.html that contains the codes, results and graphs.
 
 # Makefile
 The makefile include 4 outputs: html report and three pictures of histograms. 
@@ -31,12 +31,14 @@ make Info550_project.html
 make output/hist1.png
 make output/hist2.png
 make output/hist3.png
-* OR *
+```
+To output them all, do: 
+```
 make 
 ```
 
-# To restore the package environment 
-do:
+# Restore the package environment 
+To keep track of the version of package used in the analysis, do:
 ```
 renv::init()
 ```
