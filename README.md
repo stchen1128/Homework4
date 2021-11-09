@@ -39,6 +39,4 @@ make
 do:
 ```
 renv::init()
-```# Homework4
-# Homework4
-# Homework4
+```
